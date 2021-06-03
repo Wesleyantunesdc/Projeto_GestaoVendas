@@ -20,8 +20,12 @@
         </div>
     </mat-drawer>
     <div class="example-sidenav-content">
-        <img src="./../../assets/icones/1x/outline_menu_black_36dp.png" style="cursor: grab;" alt="icone-menu"
+        <header>
+            <img src="./../../assets/icones/1x/outline_menu_black_36dp.png" style="cursor: grab;" alt="icone-menu"
             (click)="drawer.toggle()">
+            <img src="./../../assets/icones/1x/people.png" style="cursor: grab;" alt="icone-menu"
+            (click)="sair()">
+        </header>
         <div class="container">
             <router-outlet></router-outlet>
         </div>

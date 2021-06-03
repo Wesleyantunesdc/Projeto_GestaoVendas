@@ -1,4 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { INavigation } from '../models/INavigation';
 import {NAVIGATION} from '../models/navigation.injection'
 
@@ -11,10 +12,14 @@ export class HomeComponent implements OnInit {
   showFiller = true;
   constructor(
     @Inject(NAVIGATION)
-    public nav: INavigation[]
+    public nav: INavigation[],
+    private router:Router
   ) { }
 
   ngOnInit(): void {
   }
 
+  sair(){
+    this.router.navigate(['/login'],{});
+  }
 }

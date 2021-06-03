@@ -2,18 +2,23 @@ import { INavigation } from "../models/INavigation";
 
 export const navigation: INavigation[] =[
     {
+        nome: 'Compras',
+        path: '/home/compras',
+        icon: 'shopping_bag'
+    },
+    {
+        nome: 'Estoque',
+        path: '/home/estoque',
+        icon: 'storefront'
+    },
+    {
         nome: 'Produtos',
         path: '/home/produtos',
-        icon: 'home'
+        icon: 'card_giftcard'
     },
     {
         nome: 'Vendas',
         path: '/home/vendas',
-        icon: 'home'
-    },
-    {
-        nome: 'Compras',
-        path: '/home/compras',
-        icon: 'home'
+        icon: 'local_shipping'
     }
 ]

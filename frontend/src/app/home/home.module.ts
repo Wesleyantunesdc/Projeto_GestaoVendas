@@ -10,10 +10,11 @@ import { VendasComponent } from './vendas/vendas.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { ComprasComponent } from './compras/compras.component';
 import { NAVIGATION } from '../models/navigation.injection';
+import { EstoqueComponent } from './estoque/estoque.component';
 
 
 @NgModule({
-  declarations: [HomeComponent, VendasComponent, ProdutosComponent, ComprasComponent],
+  declarations: [HomeComponent, VendasComponent, ProdutosComponent, ComprasComponent, EstoqueComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
