@@ -4,16 +4,16 @@ export const navigation: INavigation[] =[
     {
         nome: 'Produtos',
         path: '/home/produtos',
-        icon: 'pest'
+        icon: 'home'
     },
     {
         nome: 'Vendas',
         path: '/home/vendas',
-        icon: 'pest'
+        icon: 'home'
     },
     {
         nome: 'Compras',
         path: '/home/compras',
-        icon: 'pest'
+        icon: 'home'
     }
 ]

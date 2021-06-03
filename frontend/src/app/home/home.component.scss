@@ -1,7 +1,6 @@
 .example-container {
     width: 100vw;
     height: 100vh;
-    border: 1px solid rgba(0, 0, 0, 0.5);
   }
   
   .example-sidenav-content {
@@ -9,13 +8,13 @@
   }
   
   .menu-sidenav {
-    width: 20vw;
+    width: 18vw;
+    background-color: rgba(255, 255, 255, 0.61);
   }
 
   .icone-menu{
       height: 20px;
       width: 20px;
-      background-color: aqua;
   }
 
 .nav{
@@ -26,6 +25,17 @@
 .btn-navegacao{
   height: 45px;
   border: none;
+  font-family: 'Times New Roman', Times, serif, 'Arial Narrow', Arial, sans-serif;
+  font-size: 16pt;
+  background-color: rgba(255, 255, 255, 0);
+  
+}
+
+.btn-navegacao:hover{
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0.281);
+  color: white;
+  border-radius: 10px;
 }
 
 .vendedor{
@@ -36,6 +46,9 @@
   justify-content: center;
   img{
     height: 200px;
-    width: 80%;
+    width: 98%;
+  }
+  h1{
+    margin-bottom: 5px;
   }
 }

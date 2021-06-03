@@ -5,20 +5,26 @@
             Toggle extra text
         </button> -->
         <div class="vendedor">
-            <img src="./../../assets/imagens/dog.jpg" alt="foto-usuario">
-            <h1>Vendedor Dog</h1>
+            <img src="./../../assets/imagens/dog2.jpg" alt="foto-usuario">
+            <bold>
+                <h1>Vendedor Dog</h1>
+            </bold>
         </div>
         <div class="nav">
             <ng-container *ngFor="let navegacao of nav">
-                <button class="btn-navegacao">
+                <button class="btn-navegacao" [routerLink]="[navegacao.path]">
+                    <mat-icon>{{navegacao.icon}}</mat-icon>
                     {{navegacao.nome}}
                 </button>
             </ng-container>
         </div>
     </mat-drawer>
     <div class="example-sidenav-content">
-        <img src="./../../assets/icones/1x/outline_menu_black_36dp.png" style="cursor: grab;" 
-            alt="icone-menu" (click)="drawer.toggle()">
+        <img src="./../../assets/icones/1x/outline_menu_black_36dp.png" style="cursor: grab;" alt="icone-menu"
+            (click)="drawer.toggle()">
+        <div class="container">
+            <router-outlet></router-outlet>
+        </div>
     </div>
 
 </mat-drawer-container>
