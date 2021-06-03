@@ -1,0 +1,24 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="menu-sidenav" mode="side">
+        <!-- <p *ngIf="showFiller">Menu de do sistema</p>
+        <button (click)="showFiller = !showFiller" mat-raised-button>
+            Toggle extra text
+        </button> -->
+        <div class="vendedor">
+            <img src="./../../assets/imagens/dog.jpg" alt="foto-usuario">
+            <h1>Vendedor Dog</h1>
+        </div>
+        <div class="nav">
+            <ng-container *ngFor="let navegacao of nav">
+                <button class="btn-navegacao">
+                    {{navegacao.nome}}
+                </button>
+            </ng-container>
+        </div>
+    </mat-drawer>
+    <div class="example-sidenav-content">
+        <img src="./../../assets/icones/1x/outline_menu_black_36dp.png" style="cursor: grab;" 
+            alt="icone-menu" (click)="drawer.toggle()">
+    </div>
+
+</mat-drawer-container>

@@ -1,0 +1,41 @@
+.example-container {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .example-sidenav-content {
+    height: 100%;
+  }
+  
+  .menu-sidenav {
+    width: 20vw;
+  }
+
+  .icone-menu{
+      height: 20px;
+      width: 20px;
+      background-color: aqua;
+  }
+
+.nav{
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-navegacao{
+  height: 45px;
+  border: none;
+}
+
+.vendedor{
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img{
+    height: 200px;
+    width: 80%;
+  }
+}

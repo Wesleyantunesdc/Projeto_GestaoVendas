@@ -1,0 +1,38 @@
+:host{
+    color: rgb(235, 222, 222);
+}
+section{
+    background-image: linear-gradient(to bottom, #4400ff, #61002d);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+        font-size: 2.5em;
+    }
+}
+
+.div-login{
+    padding: 10px;
+    height: 40vh;
+    width: 60vw;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: solid 2px #fff;;
+    border-radius: 8px;
+    //box-shadow: 10px 10px rgba(0, 0, 0, 0.144);
+}
+
+
+.input-form-field{
+    width: 70%;
+    font-size: 16pt;
+}
+.mat-raised-button{
+    width: 70%;
+    padding: 3px;
+}
