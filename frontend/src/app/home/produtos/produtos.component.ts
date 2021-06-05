@@ -47,13 +47,15 @@ export class ProdutosComponent implements OnInit {
 
   openDialog(produto):void{
     const dialogRef = this.dialog.open(ModalComponent, {
-      width: '250px',
+      width: '50%',
+      minWidth: '600px',
       data: produto
     });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
       console.log(result);
+      this.produtos =this.produtoServico.listarTodos();
     });
   }
 }
