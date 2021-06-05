@@ -1,0 +1,29 @@
+section{
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+    header{
+        flex-direction: column;
+        width: 100%;
+        h1{
+            font-size: 24pt;
+            font-style: bold;    
+        }
+        .menu-opcoes{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-end;
+            height: 60px;
+        }
+        .btn-adicionar{
+            background-color: rgb(255, 0, 0);
+        }
+    }
+}
+table{
+    width: 100%;
+}
