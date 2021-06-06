@@ -1,6 +1,7 @@
 import { stringify } from "querystring";
+import {Negocio} from './negocio';
 
-export class Produto {
+export class Produto extends Negocio{
 
     public id: string;
     public nome: string;
@@ -10,14 +11,14 @@ export class Produto {
     public precoCompra: number;
     public precoVenda: number;
 
-    constructor(id?: string, nome?:string, marca?:string, modelo?: string, numeroSerie?: string, precoCompra?: number, precoVenda?: number) {
-        this.id = id,
-        this.nome = nome,
-        this.marca = marca, 
-        this.modelo = modelo,
-        this.numeroSerie =numeroSerie,
-        this.precoCompra = precoCompra,
-        this.precoVenda = precoVenda
+    constructor() {
+        super('Inalterado')
+        this.id = '',
+        this.nome = '',
+        this.marca = '', 
+        this.modelo = '',
+        this.numeroSerie = '',
+        this.precoCompra = 0.0,
+        this.precoVenda = 0.0
     }
-
 }

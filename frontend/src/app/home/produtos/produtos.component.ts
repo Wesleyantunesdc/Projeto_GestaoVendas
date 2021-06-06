@@ -5,6 +5,7 @@ import {CDK_TABLE, DataSource} from '@angular/cdk/table';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalComponent } from './modal/modal.component';
+import {Util} from './../../util/formatador';
 
 export interface PeriodicElement {
   name: string;
@@ -21,28 +22,24 @@ export interface PeriodicElement {
 })
 
 export class ProdutosComponent implements OnInit {
+  public util:Util;
+
   constructor(
     private produtoServico: ProdutoService,
     public dialog:MatDialog) { }
 
-  displayedColumns: string[] = ['nome', 'marca', 'modelo', 'numeroSerie','precoCompra','precoVenda'];
+  displayedColumns: string[] = ['nome', 'marca', 'modelo', 'numeroSerie','precoCompra','precoVenda','editar','excluir'];
   public produtos: Produto[];
 
   ngOnInit(): void {
-    //this.produto = new Produto();
-    // this.produto.nome = 'SSD';
-    // this.produto.marca = 'RelapagoMarquinhos';
-    // this.produto.modelo = '2';
-    // this.produto.numeroSerie = '34sd1223434123';
-    // this.produto.precoCompra = 89.00;
-    // this.produto.precoVenda = 102.00;
-    //this.cadastrar(this.produto);
     this.produtos =this.produtoServico.listarTodos();
+    this.util = new Util();
   }
 
   cadastrar():void{
-    this.openDialog(new Produto());
-    //this.produtoServico.cadatrar(produto);
+    let produto:Produto = new Produto();
+    produto.situacao = 'Novo';
+    this.openDialog(produto);
   }
 
   openDialog(produto):void{
@@ -53,9 +50,17 @@ export class ProdutosComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      console.log(result);
       this.produtos =this.produtoServico.listarTodos();
     });
+  }
+
+  editar(produto:Produto){
+    produto.situacao = 'Modificado';
+    this.openDialog(produto);
+  }
+
+  excluir(id: string){
+    this.produtoServico.excluir(id);
+    this.produtos =this.produtoServico.listarTodos();
   }
 }
