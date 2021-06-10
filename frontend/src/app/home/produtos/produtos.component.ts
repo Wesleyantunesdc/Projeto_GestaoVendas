@@ -28,7 +28,7 @@ export class ProdutosComponent implements OnInit {
     private produtoServico: ProdutoService,
     public dialog:MatDialog) { }
 
-  displayedColumns: string[] = ['nome', 'marca', 'modelo', 'numeroSerie','precoCompra','precoVenda','editar','excluir'];
+  displayedColumns: string[] = ['nome', 'marca', 'modelo', 'numeroSerie'/*,'precoCompra','precoVenda',*/,'editar','excluir'];
   public produtos: Produto[];
 
   ngOnInit(): void {

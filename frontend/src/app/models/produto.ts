@@ -8,6 +8,7 @@ export class Produto extends Negocio{
     public modelo: string;
     public numeroSerie: string;
     public valorCusto: number;
+    public descricao: string;
     public cor: String;
 
     constructor() {
@@ -18,6 +19,7 @@ export class Produto extends Negocio{
         this.modelo = '',
         this.numeroSerie = '',
         this.cor = '',
+        this.descricao = '',
         this.valorCusto = 0.0
     }
 }

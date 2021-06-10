@@ -26,9 +26,9 @@ export class ModalComponent implements OnInit {
       nome:[[this.data.nome],[Validators.required]],
       marca:[[this.data.marca],[Validators.required]],
       modelo:[[this.data.modelo],[Validators.required]],
-      numeroSerie:[[this.data.numeroSerie],[Validators.required]],
-      precoCompra:[[this.data.precoCompra],[Validators.required]],
-      precoVenda:[[this.data.precoVenda],[Validators.required]]
+      numeroSerie:[[this.data.numeroSerie],[Validators.required]]
+      // precoCompra:[[this.data.precoCompra],[Validators.required]],
+      // precoVenda:[[this.data.precoVenda],[Validators.required]]
    })
   }
 
@@ -53,7 +53,7 @@ export class ModalComponent implements OnInit {
     this.data.marca =  this.form.controls.marca.value;
     this.data.modelo =  this.form.controls.modelo.value;
     this.data.numeroSerie =  this.form.controls.numeroSerie.value;
-    this.data.precoCompra =  this.form.controls.precoCompra.value;
-    this.data.precoVenda =  this.form.controls.precoVenda.value;
+    // this.data.precoCompra =  this.form.controls.precoCompra.value;
+    // this.data.precoVenda =  this.form.controls.precoVenda.value;
   }
 }

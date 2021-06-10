@@ -5,15 +5,15 @@ import {Vendedor} from './vendedor';
 export class Pedido{
 
     public pedidoItem:PedidoItem[];
-    public curstoTotal: number;
+    public custoTotal: number;
     public dataCompra: Date;
     public dataLimiteRecebimento: Date;
     public responsavelCompra: Vendedor;
     public status: 'INCOMPLETO'|'AGUARDANDO_PAGAMENTO'|'EM_TRANSITO'|'RECEBIDO'|'DEVOLUCAO'|'RECUSADO'
 
-    constructor(pedidoItem:PedidoItem[],curstoTotal: number,dataCompra: Date, responsavelCompra: Vendedor){
+    constructor(pedidoItem:PedidoItem[],custoTotal: number,dataCompra: Date, responsavelCompra: Vendedor){
         this.pedidoItem = pedidoItem;
-        this.curstoTotal = curstoTotal;
+        this.custoTotal = custoTotal;
         this.dataCompra = dataCompra;
         this.responsavelCompra = responsavelCompra;
         this.status = 'INCOMPLETO';
