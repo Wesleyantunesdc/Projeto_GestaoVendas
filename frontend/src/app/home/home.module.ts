@@ -14,6 +14,7 @@ import { EstoqueComponent } from './estoque/estoque.component';
 import {ProdutoService} from './../services/produto.service';
 import {MatTableModule} from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [HomeComponent, VendasComponent, ProdutosComponent, ComprasComponent, EstoqueComponent],
@@ -23,7 +24,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatSidenavModule,
     MatIconModule,
     MatTableModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
   ],
   providers:[
     {provide: NAVIGATION, useValue: navigation},

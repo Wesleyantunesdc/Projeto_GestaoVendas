@@ -1,19 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Produto } from 'src/app/models/produto';
 import { ProdutoService } from 'src/app/services/produto.service';
-import {CDK_TABLE, DataSource} from '@angular/cdk/table';
-import { MatTableDataSource } from '@angular/material/table';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalComponent } from './modal/modal.component';
 import {Util} from './../../util/formatador';
-
-export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
-}
-
 
 @Component({
   selector: 'app-produtos',
