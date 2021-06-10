@@ -1,4 +1,3 @@
-import { stringify } from "querystring";
 import {Negocio} from './negocio';
 
 export class Produto extends Negocio{
@@ -8,8 +7,8 @@ export class Produto extends Negocio{
     public marca: string;
     public modelo: string;
     public numeroSerie: string;
-    public precoCompra: number;
-    public precoVenda: number;
+    public valorCusto: number;
+    public cor: String;
 
     constructor() {
         super('Inalterado')
@@ -18,7 +17,7 @@ export class Produto extends Negocio{
         this.marca = '', 
         this.modelo = '',
         this.numeroSerie = '',
-        this.precoCompra = 0.0,
-        this.precoVenda = 0.0
+        this.cor = '',
+        this.valorCusto = 0.0
     }
 }
