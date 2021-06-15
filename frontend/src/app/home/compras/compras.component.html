@@ -8,6 +8,12 @@
                 </p>
             </mat-card>
         </div>
+        <div class="btnadicionar">
+          <button mat-fab class="btn-adicionar" aria-label="Example icon button with a home icon" (click)="openDialog()">
+            <mat-icon>add</mat-icon>
+          </button>
+        </div>
+        
     </header>
     <section>
         <table mat-table [dataSource]="this.pedidos" class="mat-elevation-z8">

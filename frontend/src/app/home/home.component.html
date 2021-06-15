@@ -11,8 +11,8 @@
         <div class="nav">
             <ng-container *ngFor="let navegacao of nav">
                 <button class="btn-navegacao" [routerLink]="[navegacao.path]">
-                    <mat-icon>{{navegacao.icon}}</mat-icon>
-                    {{navegacao.nome}}
+                    <img [src]="navegacao.icon">
+                    <p>{{navegacao.nome}}</p>
                 </button>
             </ng-container>
         </div>

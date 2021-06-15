@@ -1,0 +1,28 @@
+mat-form-field{
+    width: 45%;
+    margin-right: 5%;
+}
+
+.btn-cadastrar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 5%;
+    button{
+        background-color: rgb(73, 255, 73);
+    }
+}
+
+
+.btn-editar{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 5%;
+    button{
+        background-color: rgb(44, 178, 255);
+    }
+    
+}

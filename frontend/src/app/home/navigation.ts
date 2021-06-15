@@ -4,21 +4,21 @@ export const navigation: INavigation[] =[
     {
         nome: 'Compras',
         path: '/home/compras',
-        icon: 'shopping_bag'
+        icon: '/assets/imagens/compras.png'
     },
     {
         nome: 'Estoque',
         path: '/home/estoque',
-        icon: 'storefront'
+        icon: '/assets/imagens/estoque.png'
     },
     {
         nome: 'Produtos',
         path: '/home/produtos',
-        icon: 'card_giftcard'
+        icon: '/assets/imagens/financeiro.png'
     },
     {
         nome: 'Vendas',
         path: '/home/vendas',
-        icon: 'local_shipping'
+        icon: '/assets/imagens/venda.png'
     }
 ]
