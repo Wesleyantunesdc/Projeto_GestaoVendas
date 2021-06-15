@@ -15,6 +15,8 @@ import {ProdutoService} from './../services/produto.service';
 import {MatTableModule} from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import {MatMenuModule} from '@angular/material/menu';
+
 
 @NgModule({
   declarations: [HomeComponent, VendasComponent, ProdutosComponent, ComprasComponent, EstoqueComponent],
@@ -25,7 +27,8 @@ import {MatCardModule} from '@angular/material/card';
     MatIconModule,
     MatTableModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule
   ],
   providers:[
     {provide: NAVIGATION, useValue: navigation},
