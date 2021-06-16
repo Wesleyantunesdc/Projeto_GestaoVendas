@@ -19,16 +19,20 @@
     </mat-drawer>
     <div class="example-sidenav-content">
         <header>
-            <img src="./../../assets/icones/1x/outline_menu_black_36dp.png" style="cursor: grab;" alt="icone-menu"
+            <div>
+                <img src="./../../assets/icones/1x/outline_menu_black_36dp.png" style="cursor: grab;" alt="icone-menu"
                 (click)="drawer.toggle()">
+            </div>
+            <div class="acount">
+                <button mat-button [matMenuTriggerFor]="belowMenu">
+                    <img src="assets/icones/user.png" style="cursor: grab;" alt="icone-menu">
+                </button>
+                <mat-menu #belowMenu="matMenu" yPosition="below">
+                    <button mat-menu-item>Conta</button>
+                    <button mat-menu-item (click)="sair()">Sair</button>
+                </mat-menu>
+            </div>
 
-            <button mat-button [matMenuTriggerFor]="belowMenu">
-                <img src="./../../assets/icones/1x/people.png" style="cursor: grab;" alt="icone-menu">
-            </button>
-            <mat-menu #belowMenu="matMenu" yPosition="below">
-                <button mat-menu-item>Item 1</button>
-                <button mat-menu-item>Item 2</button>
-            </mat-menu>
 
             
         </header>
